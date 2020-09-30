@@ -1,0 +1,265 @@
+﻿@model Medicare_Insurance.Models.Account
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="~/Content/user/css/style.css">
+    <link rel="stylesheet" href="~/Content/user/css/reset.css">
+    <link rel="stylesheet" href="~/Content/user/css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="scrollTop" onclick="scrollToTop()"><i class="fas fa-angle-up"></i></div>
+    <!-- ========================================== HEADER SECTION ========================================== -->
+    <header class="grid header">
+        <div class="grid wide container-navbar">
+            <a href="home.html" class="container-navbar__logo">
+                <img src="~/Content/user/img/logo_transparent.png" alt="Logo">
+            </a>
+            <div class="container-navbar__menu">
+                <ul class="container-navbar__menu-list">
+                    <li class="container-navbar__menu-list-item">
+                        <a href="" class="container-navbar__menu-list-item-link">Home</a>
+                    </li>
+                    <li class="container-navbar__menu-list-item">
+                        <a href="about.html" class="container-navbar__menu-list-item-link">About</a>
+                    </li>
+                    <li class="container-navbar__menu-list-item">
+                        <a href="contact.html" class="container-navbar__menu-list-item-link">Contact</a>
+                    </li>
+                    <li class="container-navbar__menu-list-item">
+                        <a href="feedback.html" class="container-navbar__menu-list-item-link">Feedback</a>
+                    </li>
+                    <li class="container-navbar__menu-list-item">
+                        <a href="service.html" class="container-navbar__menu-list-item-link">
+                            Service
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-navbar__button">
+                <!-- <button onclick="openLoginForm()" class="btn btn-primary" style="display: none;"> -->
+                <button onclick="openLoginForm()" class="btn btn-primary">
+                    <p>LOGIN</p>
+                </button>
+                <div class="container-navbar__button-info" style="display: none;">
+                    <img src="assets/img/avatar.png" alt="" class="container-navbar__button-info-img">
+                    <div class="container-navbar__button-info-username">Long Do</div>
+                    <ul class="container-navbar__button-info-list">
+                        <li class="container-navbar__button-info-list-item">
+                            <a href="" class="container-navbar__button-info-list-item-link">My Infomation</a>
+                        </li>
+                        <li class="container-navbar__button-info-list-item">
+                            <a href="" class="container-navbar__button-info-list-item-link">Sign out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    @RenderBody()
+    <!-- ========================================== FOOTER SECTION ========================================== -->
+    <footer class="footer">
+        <div class="grid container-footer">
+            <div class="grid wide container-footer__content">
+                <div class="container-footer__content-item">
+                    <div class="container-footer__content-item-title">
+                        <img src="~/Content/user/img/logo_transparent.png" alt="">
+                    </div>
+                    <h2 class="container-footer__content-item-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h2>
+                    <div class="container-footer__content-item-icon">
+                        <a class="container-footer__content-item-icon-link" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="container-footer__content-item-icon-link" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="container-footer__content-item-icon-link" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="container-footer__content-item-icon-link" href="">
+                            <i class="fab fa-skype"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-footer__content-item">
+                    <div class="container-footer__content-item-title">
+                        <h2>Quick Links</h2>
+                    </div>
+                    <ul class="container-footer__content-item-list">
+                        <li class="container-footer__content-item-list-item">
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-footer__content-item">
+                    <div class="container-footer__content-item-title">
+                        <h2>Quick Links</h2>
+                    </div>
+                    <ul class="container-footer__content-item-list">
+                        <li class="container-footer__content-item-list-item">
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-footer__content-item">
+                    <div class="container-footer__content-item-title">
+                        <h2>Quick Links</h2>
+                    </div>
+                    <ul class="container-footer__content-item-list">
+                        <li class="container-footer__content-item-list-item">
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-footer__content-item">
+                    <div class="container-footer__content-item-title">
+                        <h2>Quick Links</h2>
+                    </div>
+                    <ul class="container-footer__content-item-list">
+                        <li class="container-footer__content-item-list-item">
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                            <a href="" class="container-footer__content-item-list-item-link">About us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid container-footer">
+            <div class="grid wide container-footer__copyright">
+                <p class="container-footer__copyright-text">
+                    Copyright ©2020 All rights reserved | This template is made with luv by <a href="">Long Dep Trai</a>
+                </p>
+                <div class="container-footer__copyright-icon">
+                    <a href="" class="container-footer__copyright-icon-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="container-footer__copyright-icon-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="container-footer__copyright-icon-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="container-footer__copyright-icon-link">
+                        <i class="fab fa-skype"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== POPUP SECTION ========================================== -->
+    <div class="popup-overlay" onclick="closeLoginForm()"></div>
+    <div class="popup">
+        <div class="popup-close" onclick="closeLoginForm()">&times;</div>
+        <div class="popup-form" id="registerFormActive">
+
+            <div class="popup-form__button-box">
+                <div id="btn"></div>
+                <button type="button" class="popup-form__button-box-toggle" id="loginButton" onclick="login()">Login</button>
+                <button type="button" class="popup-form__button-box-toggle" id="registerButton" onclick="register()">Register</button>
+            </div>
+            @using (Html.BeginForm("Login","Account",FormMethod.Post, new { htmlAttributes = new { @id = "login", @class = "popup-form__group" } }))
+            {
+            
+            <div class="popup-form__group-avatar layer" data-speed="2">
+                <img src="~/Content/user/img/login_form.png" alt="Login_form">
+            </div>
+            <div class="popup-form__group-heading">
+                Member login
+            </div>
+
+            <div class="popup-form__group-element">
+                @*<input type="text" name="username" id="username" autocomplete="off" required>*@
+                @Html.EditorFor(model => model.userName, new { htmlAttributes = new { @id = "username", @class = "input-login" } })
+                <label for="name" class="label-text success">
+                    <span class="content-text" label for="username">Username</span>
+                    <i class="fas fa-check-circle content-icon"></i>
+                </label>
+            </div>
+            <div class="popup-form__group-element">
+                @*<input type="password" name="password" id="password" autocomplete="off" required>*@
+                @Html.EditorFor(model => model.password, new { htmlAttributes = new { @type = "password", @id = "password", @class = "input-login" } })
+               <label for="password" class="label-text">
+                    <span class="content-text" label for="password">Password</span>
+                </label>
+            </div>
+            <div class="popup-form__group-element">
+                <button type="submit">Login</button>
+            </div>
+            }
+            <div id="register" class="popup-form__group">
+                <div class="popup-form__group-avatar layer" data-speed="2">
+                    <img src="~/Content/user/img/login_form.png" alt="">
+                </div>
+                <div class="popup-form__group-heading">
+                    Member Register
+                </div>
+                <div class="popup-form__group-element">
+                    <label label for="firstname">First Name</label>
+                    <input type="text" id="firstname">
+                </div>
+                <div class="popup-form__group-element">
+                    <label label for="lastname">Last Name</label>
+                    <input type="text" id="lastname">
+                </div>
+                <div class="popup-form__group-element">
+                    <label label for="username">Username</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="popup-form__group-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="popup-form__group-element">
+                    <label label for="address">Address</label>
+                    <input type="text" id="address">
+                </div>
+                <div class="popup-form__group-element">
+                    <label label for="phone">Phone</label>
+                    <input type="text" id="phone">
+                </div>
+                <div class="popup-form__group-element">
+                    <label label for="state">State</label>
+                    <input type="text" id="state">
+                </div>
+                <div class="popup-form__group-element">
+                    <label label for="country">Country</label>
+                    <input type="text" id="country">
+                </div>
+                <div class="popup-form__group-element">
+                    <label label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="popup-form__group-element">
+                    <button type="submit">Register</button>
+                </div>
+            </div>
+</div>
+</div>
+    <script src="~/Content/user/js/main.js"></script>
+</body>
+</html>
+
+
